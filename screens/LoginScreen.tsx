@@ -211,7 +211,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
                 />
             </div>
             <main className="flex-grow flex items-center justify-center px-4 z-10">
-                <div className="w-full max-w-lg p-8 space-y-6 bg-dark-card/80 backdrop-blur-md rounded-3xl shadow-2xl shadow-black/20 border border-dark-border/50 animate-fade-in">
+                <div className="w-full max-w-xs sm:max-w-lg p-6 sm:p-8 space-y-6 bg-dark-card/80 backdrop-blur-md rounded-3xl shadow-2xl shadow-black/20 border border-dark-border/50 animate-fade-in">
                     {isRegistering 
                         ? <RegisterForm onSwitchToLogin={() => setIsRegistering(false)} /> 
                         : <LoginForm onLogin={onLogin} onSwitchToRegister={() => setIsRegistering(true)} />
